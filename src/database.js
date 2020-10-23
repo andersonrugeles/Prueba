@@ -15,9 +15,7 @@ if(err.code==='ECONREFUSED'){
     console.error('DATABASE CONNECTION WAS REFUSED')
 }
 }
-if(connection)connection.release();
-console.log('conectada');
-return;
+
 });
 pool.query=promisify(pool.query);
 module.exports=pool;

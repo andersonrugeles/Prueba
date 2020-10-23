@@ -2,7 +2,20 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
+{{#if success}}
+                <div class="container p-4">
+                 <div class="row">
+                      <div class="col-md-4 mx-auto">
+              <div class="alert alert-success alert-dismissible fade show" role="alert"> 
+              {{success}}
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+           </div>
+         </div>
+      </div>
+      {{/if}}
 <body>
     <div id="login">
         <h3 class="text-center text-white pt-5">Register form</h3>
@@ -11,7 +24,7 @@
               
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post">
+                        <form id="login-form" class="form" action="" target="" method="post">
                             <h3 class="text-center text-info">Register</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
