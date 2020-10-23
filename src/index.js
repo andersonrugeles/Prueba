@@ -65,6 +65,7 @@ app.use(require('./routes/carrito'));
 app.use(require('./routes/compras'));
 app.use(require('./routes/register'));
 app.use(require('./routes/index'));
+app.use(require('./routes/contact'));
 
 
 
