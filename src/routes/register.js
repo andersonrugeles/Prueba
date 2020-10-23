@@ -11,11 +11,8 @@ router.post('/register',async(req,res)=>{
     const {usuario,password}=req.body;
     const agregar={usuario,password};
     const result=await pool.query('insert into contacto set ?',[agregar]);
-    req.flash('success','Contacto agregado exitosamente');
-    res.redirect('../agrega');
+    console.log('registro exitoso');
+    res.redirect('../index');
  });
-
-
-
 
 module.exports=router;

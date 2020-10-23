@@ -2,6 +2,7 @@ const express= require('express');
 const morgan= require('morgan');
 const exphbs= require('express-handlebars');
 const path= require('path');
+const flash=require('connect-flash');
 //inicio
 const app= express();
 
@@ -18,14 +19,13 @@ app.engine('.hbs',exphbs({
 app.set('view engine','.hbs');
 
 //peticiones
+
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 //variables globales
-app.use((req,res,next)=>{
-    next();
-});
+
 
 //rutas
 app.use(require('./routes'));
