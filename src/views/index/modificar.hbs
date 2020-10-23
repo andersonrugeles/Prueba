@@ -1,0 +1,22 @@
+<div class='col-md-4'>
+	
+<form action="" target="" method="post">
+
+	<label for="nombre">Nombre</label>
+	<input type="text" value={{index.nombre}} name="nombre" id="nombre" />
+
+	<label for="apellidos">Apellidos</label>
+	<input type="text" value={{index.apellido}} name="apellido" id="apellido" />
+
+	<label for="email" />Email</label>
+	<input type="email" value={{index.email}} name="email" id="email"  required />
+
+	<label for="asunto">Asunto</label>
+	<input type ="text"value={{index.asunto}} name="asunto" id="asunto" />
+
+	<label for="mensaje">Mensaje</label>
+	<textarea name="mensaje" value={{index.mensaje}} for="mensaje" id="mensaje" maxlength="300"></textarea>
+	
+	<input type="submit" name="enviar" value="enviar datos"/>
+</form>
+</div>
