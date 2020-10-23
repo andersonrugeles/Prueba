@@ -6,14 +6,14 @@ const {noestalogueado}=require('../lib/valida');
 
 router.get('/index',(req,res)=>{
 
-     res.render('index/inicio');
+     res.render('iniciasesion/login');
 });
 
 
 router.post('/index',noestalogueado,(req,res,next)=>{
     passport.authenticate('local.inicio',{
         successRedirect: '/sesion',
-        failureRedirect: '/index/inicio',
+        failureRedirect: '/iniciasesion/login',
         failureFlash: true
     })(req,res,next);
     });

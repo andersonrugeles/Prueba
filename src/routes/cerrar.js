@@ -4,7 +4,7 @@ const router= express.Router();
 
 router.get('/cerrarsesion',(req,res)=>{
     req.logOut();
-    res.redirect('index/inicio');
+    res.redirect('/index');
 });
 
 

@@ -565,6 +565,7 @@ footer {
 
     .nav-menu-item {
         list-style: none;
+      
     }
 
     .nabvar-mobile {
@@ -617,8 +618,9 @@ footer {
     }
 
     .nav-menu-item {
-        border-top: 2;
-        position: relative;
+      
+  
+        padding-left: 50rem;
     }
 
     .nav-menu-link {

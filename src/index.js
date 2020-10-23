@@ -51,21 +51,12 @@ app.use((req,res,next)=>{
 
 //rutas
 app.use(require('./routes'));
-app.use('/registros',require('./routes/authentication'));
-app.use('/links',require('./routes/links'));
 app.use(require('./routes/cerrar'));
-app.use(require('./routes/administrativos'));
-app.use('/iniciasesion',require('./routes/authentication'));
-app.use(require('./routes/agrega'));
-app.use(require('./routes/listarp'));
-app.use(require('./routes/listaru'));
-app.use(require('./routes/agregaruser'));
-app.use(require('./routes/sesion'));
-app.use(require('./routes/carrito'));
-app.use(require('./routes/compras'));
 app.use(require('./routes/register'));
 app.use(require('./routes/index'));
 app.use(require('./routes/contact'));
+app.use(require('./routes/forgot'));
+app.use(require('./routes/sesion'));
 
 
 
