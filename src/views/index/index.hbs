@@ -46,7 +46,10 @@
                                 <th>Last Name</th>
                                 <th>Email</th>                               
                                 <th>Contact Number</th>
-                                <th></th>
+                                <th>                               
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregarContacto">
+       Agregar
+      </button></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -65,63 +68,7 @@
        Modificar
       </button>
       
-      <!-- Modal Agregar -->
-        <!-- Modal -->
-          <div class="modal fade" id="agregarContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <form action="/agregar_contacto" method="post">
-                <div class="modal-content">
-                  <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">Agregar</h5>
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">&times;</span>
-                     </button>
-                  </div>
-          <div class="modal-body">
-  
-            <div class="input-group input-group-sm mb-3">
-             <div class="input-group-prepend">
-             <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
-             </div>
-      <input type="text" class="form-control" 
-        aria-label="Sizing example input" name="nombre"  aria-describedby="inputGroup-sizing-sm">
-      </div>              
-
-
-      <div class="input-group input-group-sm mb-3">
-          <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
-          </div>
-      <input type="text" class="form-control" 
-        aria-label="Sizing example input" name="apellido"  aria-describedby="inputGroup-sizing-sm">
-      </div>      
     
-      <div class="input-group input-group-sm mb-3">
-          <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
-          </div>
-      <input type="text" class="form-control" 
-        aria-label="Sizing example input" name="email"  aria-describedby="inputGroup-sizing-sm">
-      </div> 
-        
-       <div class="input-group input-group-sm mb-3">
-          <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-sm">Contact Number</span>
-          </div>
-      <input type="text" class="form-control" 
-        aria-label="Sizing example input" name="numero_contacto" aria-describedby="inputGroup-sizing-sm">
-      </div>
-      
-
-    </div>
-<div class="modal-footer">
-  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-  <button type="submit" class="btn btn-primary">Guardar</button>
-     </div>
-      </div>
-       </div>
-</div>
-</form>
        <!-- Modal Modificar-->
           <div class="modal fade" id="modificarContacto{{id_contacto}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -222,6 +169,63 @@
                         </tbody>  
                          
                    {{/each}}      
+                     <!-- Modal Agregar -->
+        <!-- Modal -->
+          <div class="modal fade" id="agregarContacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <form action="/agregar_contacto" method="post">
+                <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Agregar</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+          <div class="modal-body">
+  
+            <div class="input-group input-group-sm mb-3">
+             <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-sm">First Name</span>
+             </div>
+      <input type="text" class="form-control" 
+        aria-label="Sizing example input" name="nombre"  aria-describedby="inputGroup-sizing-sm">
+      </div>              
+
+
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Last Name</span>
+          </div>
+      <input type="text" class="form-control" 
+        aria-label="Sizing example input" name="apellido"  aria-describedby="inputGroup-sizing-sm">
+      </div>      
+    
+      <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+          </div>
+      <input type="text" class="form-control" 
+        aria-label="Sizing example input" name="email"  aria-describedby="inputGroup-sizing-sm">
+      </div> 
+        
+       <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Contact Number</span>
+          </div>
+      <input type="text" class="form-control" 
+        aria-label="Sizing example input" name="numero_contacto" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      
+
+    </div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+     </div>
+      </div>
+       </div>
+</div>
+</form>
                        </table>                  
                     </div>
                 </div>
