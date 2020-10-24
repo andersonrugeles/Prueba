@@ -18,6 +18,7 @@ router.post('/delete/:id_contacto',estalogueado,async(req,res)=>{
     res.redirect('../sesion');
 });
 
+
 router.post('/agregar_contacto',estalogueado,async(req,res)=>{
     const {nombre,apellido,email,numero_contacto}=req.body;
     const fk_id_usuario=req.user.id_usuario;
